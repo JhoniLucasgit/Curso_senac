@@ -29,10 +29,8 @@
 /*CONFIGURAÇÃO DA PÁGINA HOME.HTML */
 
 /* configuração do corpo */
-#corpo-home{    
-    height: 1404px;
-}
-    /*config dos dados do corpo*/
+   
+/*config dos dados do corpo*/
 #dados {
     width: 800px;
 }
@@ -67,6 +65,10 @@
 }
 #p-artigo {
     margin: 3px;
+}
+.imagem-table-article{
+    width: 20px;
+    height: 20px;
 }
     /*fim da config do artigo*/
 
