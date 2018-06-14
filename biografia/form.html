@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário</title>
+	</head>
+
+	<body>
+		<!-- method = 
+			get = envia os dados via url
+			post = envia os dados no corpo da requisição(esconde mas não proteje) -->
+		<form method="" action="">
+			<!-- name é o id para o servidor -->
+
+			<!-- campo de nome(string/texto) -->
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" name="nome" placeholder="Nome completo" required autocomplete="off" autofocus>
+			<br><br>
+
+			<!-- campo de senha(caracteres ocultos) -->
+			<label for="senha">Senha:</label>
+			<input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+			<br><br>
+
+			<!-- campo de data(dd/mm/aaaa) -->
+			<label for="dt_nasc">Data de Nascimento:</label>
+			<input type="date" id="dt_nasc" name="dt_nasc">
+			<br><br>
+
+			<!-- campo de hora(24 hrs) -->
+			<label for="hr_nasc">Hora do Nascimento:</label>
+			<input type="time" id="hr_nasc" name="hr_nasc">
+			<br><br>
+
+			<!-- campo de Idade(aceita só números[pode ser controlado por limitadores]) -->
+			<label for="idade">Idade:</label>
+			<input type="number" id="idade" name="idade" value="18" min="18" max="35">
+			<br><br>
+
+			<!-- campo de nota(aparece uma barra com um valor com limites mínimo e máximo) -->
+			<label for="nota">Nota para a página:</label>
+			<input type="range" id="nota" name="nota" value="5" min="0" max="10">
+			<br><br>
+
+			<!-- campo de email(só aceita no formato de email[exemplo@test.com]) -->
+			<label for="email">E-mail:</label>
+			<input type="email" id="email" name="email" required>
+			<br><br>
+
+			<!-- campo de select(option[opção da lista], 
+				optgroup[grupo de opções]) -->
+			<label for="cidade">Cidade:</label>
+			<select id="cidade"	name="cidade">
+				<option disabled selected>Selecione uma cidade</option>
+				<optgroup label="RN">
+					<option value="nat">Natal</option>
+					<option value="mos">Mossoró</option>
+				</optgroup>
+				<optgroup label="PE">
+					<option value="rec">Recife</option>
+					<option value="car">Caruaru</option>	
+				</optgroup>
+				<option value="bsb">Brasilia</option>
+				<option value="poa">Porto Alegre</option>
+			</select>
+			<br><br>
+
+			<!-- campo de fieldset(cria uma caixa com textos dentro), 
+			legend(legenda do fieldset) 
+			checkbox(opção de marcar[pode ser desmarcado])
+			-->
+			<fieldset>
+				<legend>Áreas de interesse</legend>
+				<label>
+				<input type="checkbox" name="esportes" value="esportes" checked>
+				Esportes
+				</label>
+				<label>
+					<input type="checkbox" name="cinema" value="cinema">
+					Cinema
+				</label>
+				<label>
+					<input type="checkbox" name="viagens" value="viagens">
+					Viagens
+				</label>
+				<label>
+					<input type="checkbox" name="comida" value="comida">
+					Comida
+				</label>	
+			</fieldset>
+			<br>
+
+			<!-- campo de radio(opçao de marcar[não pode ser desmarcado], colocar o mesmo name para poder desmarca a outra opção) -->
+			<fieldset>
+				<legend>Sexo</legend>
+				<label>
+					<input type="radio" name="sexo" value="masculino" checked>
+					Masculino
+				</label>
+				<label>
+					<input type="radio" name="sexo" value="feminino">
+					Feminino
+				</label>
+			</fieldset>
+			<br><br>
+
+			<!-- campo de descrição
+				cols[número de caracteres por linha], 
+				rows[números de linhas]
+				o usuário pode redimencionar, limitar no CSS(style="resize: none;") 
+				textarea(area de texto)
+			-->
+			<label for="descricao">Descrição:</label>
+			<br>
+			<textarea id="descricao" name="descricao"
+				cols="30" rows="5" style="resize: none;" 
+			></textarea>
+			<br><br>
+
+			<!-- botão de upload de arquivos -->
+			<input type="file" name="foto">
+			<br><br>
+
+			<!-- botão para submeter os dados do formulário(tipo=submit) 
+				botão para resetar o formulário(limpa o formulário) -->
+			<button type="submit">Enviar</button>
+			<button type="reset">Limpar</button>
+		</form>
+
+	</body>
+
+</html>

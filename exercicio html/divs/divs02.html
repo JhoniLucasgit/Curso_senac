@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trabalhando com DIVs</title>
+        <style>
+            * {
+                margin: 0px;/* margem de fora */
+                padding: 0px;/* margem de dentro */
+            }
+
+            #cabecalho {
+                background-color: blueviolet;
+                width: 400px;
+                height: 100px;
+                color: aliceblue;
+            }
+
+            #corpo {
+                width: 400px;
+                height: 400px;
+            }
+
+            #menuLateral{
+                background-color: darkgoldenrod;
+                width: 100px;
+                height: 400px;
+                float: left;
+                color: aliceblue;
+            }
+            
+            #conteudo {
+                background-color: indigo;
+                width: 300px;
+                height: 400px;
+                float: left;
+                color: aliceblue;
+            }  
+
+            #rodape {
+                background-color: crimson;
+                width: 400px;
+                height: 100px;
+                color: aliceblue;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="cabecalho">CABEÇALHO</div>
+        <div id="corpo">
+            <div id="menuLateral">MENU LATERAL</div>           
+            <div id="conteudo">CONTEÚDO</div>    
+        </div>  
+        <div id="rodape">RODAPÉ</div>
+    </body>
+</html>

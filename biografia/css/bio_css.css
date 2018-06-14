@@ -1,0 +1,69 @@
+
+/* FONTES */
+
+@font-face{
+	/* importando a fonte */
+	font-family: 'Kavivanar';/* nome da fonte */
+	src: url(../fonts/Kavivanar/Kavivanar-Regular.ttf), url(fonts/Roboto_Mono/RobotoMono-Regular.ttf); /*endereço da fonte*/
+}
+
+/* IDS */
+
+#tituloh1{
+	text-align: center;/*alinhamento de texto*/
+	word-spacing: 15px;/*espaço entre palavras*/
+	text-shadow: 4px 3px #da54ff;/*sombra de texto*/
+	color: blue;/*cor da letra*/
+	font-family: 'Kavivanar', cursive;/*fonte da letra*/
+}
+#foto{
+	width: 150px;
+	height: 105px;
+	border-radius: 50%;
+}
+#imagem{
+	width: 200px;
+	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* CLASSES */
+
+.borda-azul{
+	border: 1px solid;/*dimenção da borda*/
+	border-color: blue;/*cor da borda*/
+}
+.tituloh2{
+	color: rgb(95, 0, 95);/*cor da letra*/
+	direction: rtl;/*deixa as palavras na direita*/
+	line-height: 1.5;/*tamanho da letra*/
+	letter-spacing: 2px;/*espaço entre as letras*/
+	text-indent: 5px;/*identação de texto(espaço entre as linhas e a borda)*/
+	background-color: #3dac45;/*cor de fundo*/
+	font-family: 'Kavivanar', cursive;/*fonte da letra*/
+}
+.bordaRoxa{
+	border: 1px solid;/*dimenção da borda*/
+	border-color: rgb(95, 0, 95);/*cor da borda*/
+}
+
+/* TAGS */
+
+em{
+	text-transform: uppercase;/*transforma o texto em maiúscula*/
+	text-decoration: underline;/*deixa o texto sublinhado*/
+}
+p{
+	text-align: justify;/*formatação de texto: justificar*/
+}
+body{	
+	font-family: 'Roboto Mono', monospace;/*fonte da letra*/
+}
+ul{
+	/* lista desordenada*/
+    list-style-type: square;/*tipo de lista*/
+}
+a{
+	text-decoration: none;
+}

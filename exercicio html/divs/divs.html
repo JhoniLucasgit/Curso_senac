@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trabalhando com DIVs</title>
+        <style>
+            * {
+                margin: 0px;/* margem de fora */
+                padding: 0px;/* margem de dentro */
+            }
+
+            #div1 {
+                background-color: aqua;
+                margin-bottom: 10px;
+                position: sticky;/* pegasojo */
+                top: 0;
+                
+            }
+
+            #div2 {
+                background-color: yellowgreen;
+                position: relative;/*relativo*/
+                margin: 20px 0px;
+                padding: 30px; 
+                height: 1300px;
+                z-index: -1;/*define se a propriedade fica por baixo ou por cima da outra,
+                negativo para deixar atras e positivo para ficar na frente*/
+            }
+
+            #div3 {
+                background-color: orchid;
+                position: fixed;/*fixo*/
+                bottom: 0;
+                left: 0;
+                width: 200px;
+            }
+            
+            #divinha {
+                background-color: blueviolet;
+                position: absolute;
+                width: 200px;
+                height: 100px;
+                right: 0;
+                top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">DIV 01</div>
+        <div id="div2">DIV 02
+                <div id="divinha"></div>
+        </div>    
+        
+        <div id="div3">DIV 03</div>
+    </body>
+</html>

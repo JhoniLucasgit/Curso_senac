@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*  configuração da página  */
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: aqua;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho, .rodape {
+    width: 800px;
+    height: 80px;
+    background-color: blue;
+}
+
+.menu {
+    height: 25px;
+}
+
+.corpo {
+    width: 800px;
+    background-color: brown;
+}
+/* fim da configuração da página*/
+
+/*CONFIGURAÇÃO DA PÁGINA HOME.HTML */
+
+/* configuração do corpo */
+#corpo-home{    
+    height: 1404px;
+}
+    /*config dos dados do corpo*/
+#dados {
+    width: 800px;
+}
+
+#foto-politico {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#dados-pessoais {
+    width: 580px;
+    height: 200px;
+    padding: 10px;
+}
+
+#fieldset-dados-pessoais {
+    padding: 5px;
+    margin-left: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+    /*fim da config dos dados do corpo*/
+
+    /*config do artigo*/
+#fieldset-historico {
+    width: 770px;
+    margin-left: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+#p-artigo {
+    margin: 3px;
+}
+    /*fim da config do artigo*/
+
+    /*config do rodape do artigo*/
+#fieldset-rodape-artigo{
+    width: 770px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+#link-artigo-rodape{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+    /*fim da config do rodape do artigo*/
+
+/*FIM DA CONFIGURAÇÃO DA PÁGINA HOME.HTML*/

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tabelas</title>
+		<style type="text/css">
+			table, td, th{
+				border: 1px solid red;
+				border-collapse: collapse;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<!-- colspan mescla colunas(horizontal) -->
+				<!-- rowspan mescla linhas(vertical) -->
+				<tr>					
+					<th colspan="3">Tabela de Clientes</th>
+				</tr>
+				<tr>
+					<th>Id</th>
+					<th>Nome</th>
+					<th>Nascimento</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Jhonatann Lucas</td>
+					<td>28/01/1997</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Sobrinho Justino</td>
+					<td>25/06/1966</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Antônio Augusto</td>
+					<td>14/03/1994</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">Total</td>
+					<td>3</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

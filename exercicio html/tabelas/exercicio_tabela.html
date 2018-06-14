@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tabelas exercicio</title>
+		<style type="text/css">
+			/*	TODAS AS TABELAS  */
+			table, td, tr, th{
+				border: 1px solid black;
+				border-collapse: collapse;
+				width: 50px;
+				height: 20px;
+			}
+
+			/*	TABELA 2  */
+			#tabela2tr{
+				background-color: #c6aa6d;
+			}
+
+			/*	TABELA 3  */
+			#tabela3td{
+				background-color: #c15761;
+			}
+
+			/*	TABELA 4  */
+			#tabela4 th {
+			    background-color: rgb(79, 129, 189);
+			    color: rgb(255, 255, 255);
+			    border: 2px solid white;
+			}
+			#tabela4 td{
+			    background-color: rgba(208, 216, 232);
+			    border: 1px solid white;
+			}
+			#tabela4{				
+			    font-family: 'calibri', san-serif;
+			    font-size: 12pt;
+			}
+			#tab4col2{
+				width: 90px;
+			}
+		</style>
+	</head>
+	<body>
+		1
+		<table id="t01">
+			<tr>
+				<td>A</td>
+				<td>B</td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td>D</td>
+			</tr>
+			<tr>
+				<td>E</td>
+				<td>F</td>
+			</tr>
+		</table><br>
+		
+		2
+		<table>	
+			<tr id="tabela2tr">
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+			</tr>
+			<tr>
+				<td>E</td>
+				<td>F</td>
+				<td>G</td>
+				<td>H</td>
+			</tr>
+		</table><br>
+
+		3
+		<table>
+			<tr>
+				<td id="tabela3td">A</td>
+				<td>1</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>B</td>
+				<td id="tabela3td">2</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td>3</td>
+				<td id="tabela3td">6</td>
+			</tr>
+		</table><br>
+
+		4
+		<table id="tabela4">
+			<tr>
+				<th>N°</th>
+				<th id="tab4col">Nome</th>
+			</tr>
+			<tr>
+				<td style="text-align: center;">1 <br>2 <br>3</td>
+				<td>Zé <br>Toinho <br>Chico</td>
+			</tr>
+		</table>
+		<br>
+			
+		1
+		<table>
+			<tr>
+				<td>A</td>
+				<td>D</td>
+				<td>G</td>
+			</tr>
+			<tr>
+				<td>B</td>
+				<td>E</td>
+				<td>H</td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td>F</td>
+				<td>I</td>
+			</tr>
+		</table>
+		<br>
+
+		2
+		<table>
+			<tr>
+				<td colspan="3">A</td>
+			</tr>
+			<tr>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+			</tr>
+			<tr>
+				<td>E</td>
+				<td>F</td>
+				<td>G</td>
+			</tr>
+		</table>
+		<br>
+
+		3
+		<table>
+			<tr>
+				<td rowspan="3">A</td>
+				<td>B</td>
+				<td>C</td>
+			</tr>
+			<tr>
+				
+				<td>D</td>
+				<td>E</td>
+			</tr>
+			<tr>
+				
+				<td>F</td>
+				<td>G</td>
+			</tr>
+		</table>
+		<br>
+
+		4
+		<table>
+			<tr>
+				<td>A</td>
+				<td rowspan="3">D</td>
+				<td>F</td>
+			</tr>
+			<tr>
+				<td>B</td>
+				
+				<td>G</td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td>H</td>
+			</tr>
+		</table>
+		<br>
+
+		5
+		<table>
+			<tr>
+				<td>A</td>
+				<td>D</td>
+				<td rowspan="3">F</td>
+			</tr>
+			<tr>
+				<td colspan="2">B</td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td>E</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

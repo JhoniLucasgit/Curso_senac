@@ -1,0 +1,86 @@
+
+/* TRATANDO O RETRATO */
+
+#caixaFoto{
+	float: right;
+	display: block;
+	width: 20%; 
+	height: 300px;
+}
+#foto{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+	height: 250px;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+}
+
+
+/* TRATANDO O TEXTO */
+
+/*Dados Pessoais lista*/
+#dados{
+	list-style: none;
+}
+
+h1{
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+}
+h2{
+	font-family: 'Titillium Web', sans-serif; 
+}
+p{
+	font-family: 'Muli', sans-serif;
+	text-indent: 20px; 
+	text-align: justify;
+	margin: 10px 10px 10px 10px;
+}
+li{
+	font-family: 'Muli', sans-serif;
+}
+
+/*	TRATANDO AS DIVS */
+
+#caixa{
+	width: 80%;
+}
+#nome{
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgb(164, 197, 252);
+}
+#dadosPessoais{
+	width: 100%;	
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgb(164, 197, 252);
+}
+#sobreMim{
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgb(164, 197, 252);
+}
+#comoTrabalho{
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgb(164, 197, 252);
+}
+#experiencia{
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgb(164, 197, 252);
+}
+#academico{
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgb(164, 197, 252);
+}
+
+body{
+	background-color: rgba(164, 197, 252,0.5);
+
+
+}
+
+

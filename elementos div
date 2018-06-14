@@ -1,0 +1,57 @@
+html blocks (div/span)
+
+css margin
+css padding
+css position
+css float
+css overflow
+-----------------------------------------------------------------------------
+
+div é um elemento nível block que sempre inicia em uma nova linha e ocupa toda a largura disponivel para esquerda e para direita.
+
+div é usado como contêiner para outros elementos html.
+
+span é um elemento nível inline que não inicia em uma nova linha e ocupa somente o tamanha necessário embutido dentro de um parágrafo.
+
+span é usado como contêiner para algum texto
+
+----------/----------/----------/-----------/----------/----------/----------
+
+MARGIN: são propriedades de CSS que criam espaço em torno de cada elemento.
+espaçamento externo em relação aos seus vizinhos.
+	margin: cima direita baixo esquerda.
+	margin-top: margem de cima
+	margin-right: margem da direita
+	margin-bottom: margem de baixo
+	margin-left: margem da esquerda
+Todas as propriedades de margem podem ter os seguintes valores:
+
+	auto - o navegador calcula a margem
+	length - especifica uma margem em px, pt, cm, etc.
+	% - especifica uma margem em% da largura do elemento contido
+	inherit - especifica que a margem deve ser herdada do elemento pai
+
+PADDING: são propriedades de CSS que criam espaço em torno do conteúdo de um 	 elemento, dentro de uma borda definida.
+	espaço entre os elementos dentro da div e a borda da div.
+
+	padding: cima direita baixo esquerda
+	padding-top: margem de cima
+	padding-right: margem da direita
+	padding-bottom: margem de baixo
+	padding-left: margem da esquerda
+
+POSITION: especifica o método de posicionamento usado para um elemento(estático, relativo, fixo, absoluto ou pegasojo).
+	
+	STATIC(estático) - Elementos HTML são posicionados estáticos por padrão. Elementos posicionados estáticos não são afetados pelas propriedades superior, inferior, esquerda e direita.
+	
+	RELATIVE(relativo) - Um elemento position: relative;está posicionado em relação à sua posição normal.
+	
+	FIXED(fixo) - tem posição fixa em relação a tela do navegador, mesmo que role pra cima ou para baixo ela vai fica no mesmo lugar.
+	
+	ABSOLUTE(absoluto) - é posicionado em relação ao ancestral posicionado mais próximo.
+	
+	STICKY(pegasojo) - é posicionado com base na posição de rolagem do usuário. Um elemento adesivo alterna entre relativee fixed, dependendo da posição de rolagem. Ela é posicionada relativa até que uma determinada posição de deslocamento seja atendida na viewport - então ela "gruda" no lugar (como position: fixed).
+
+FLOAT: propriedade CSS especifica como um elemento deve flutuar.
+	clear: propriedade CSS especifica quais elementos podem flutuar ao lado do elemento limpo e em qual lado.
+overflow

@@ -1,0 +1,6 @@
+git init /* criar um repositorio */
+git add /* adicionar arquivos */
+git commit -m /* confirma a adição dos arquivos e mostra uma mensagem */
+
+
+git status /* checa os status dos arquivos */ 
