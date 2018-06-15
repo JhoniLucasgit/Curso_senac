@@ -2,7 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
-/*  configuração da página  */
+/*  configuração geral de páginas */
+body{
+    background-color: rgba(162, 193, 242, 0.5);
+}
 .container {
     width: 800px;
     margin: auto;
@@ -22,9 +25,10 @@
 
 .corpo {
     width: 800px;
-    background-color: brown;
+    background-color: white;
+    padding-bottom: 10px;
 }
-/* fim da configuração da página*/
+/* fim da configuração geral de páginas*/
 
 /*CONFIGURAÇÃO DA PÁGINA HOME.HTML */
 
@@ -33,13 +37,19 @@
 /*config dos dados do corpo*/
 #dados {
     width: 800px;
+    text-align: justify;
+}
+
+#figure-foto-politico {
+    width: 200px;
+    height: 200px;    
+    float: right;
+    margin: 10px;
 }
 
 #foto-politico {
-    width: 200px;
-    height: 200px;
-    float: right;
-    margin: 10px;
+    width: 100%;
+    height: 100%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -57,19 +67,37 @@
     /*fim da config dos dados do corpo*/
 
     /*config do artigo*/
+h2 {
+    margin: 4px 0px 2px;
+}
+#historico {
+    margin: 10px;
+    width: 800px;
+}
 #fieldset-historico {
-    width: 770px;
-    margin-left: 10px;
+    width: 766px;
     padding: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 #p-artigo {
-    margin: 3px;
+    margin: 5px;
 }
+
+    /*config tabela do artigo*/
 .imagem-table-article{
     width: 20px;
     height: 20px;
 }
+#tabela-artigo-corpo, #tabela-artigo-corpo tr, #tabela-artigo-corpo td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+    /*config lista do artigo*/
+#lista-artigo-corpo {
+    list-style: none;
+    margin-left: 5px;
+}
+
     /*fim da config do artigo*/
 
     /*config do rodape do artigo*/
