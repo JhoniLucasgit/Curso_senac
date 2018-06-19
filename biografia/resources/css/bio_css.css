@@ -4,7 +4,7 @@
 @font-face{
 	/* importando a fonte */
 	font-family: 'Kavivanar';/* nome da fonte */
-	src: url(../fonts/Kavivanar/Kavivanar-Regular.ttf), url(fonts/Roboto_Mono/RobotoMono-Regular.ttf); /*endereço da fonte*/
+	src: url(../fonts/Kavivanar/Kavivanar-Regular.ttf), url(../fonts/Roboto_Mono/RobotoMono-Regular.ttf); /*endereço da fonte*/
 }
 
 /* IDS */

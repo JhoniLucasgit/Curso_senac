@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*colocar as configurações do maior para o menor e definir os tamanhos de mxm e min*/
+
+@media screen and (max-width: 576px) {/*config para telas ate 576px(smartfone) --- valores para largura da tela(width)*/
+   
+    #container {
+        width: 500px;
+        margin: auto;
+    }
+    #conteudo, #rodape {
+        display: none;/*faz a div sumir na resolução apresentada*/
+    }
+
+    #menu {
+        width: 500px;
+        height: 100px;
+        background-color: blue;
+    }
+
+    #feeds {
+        width: 500px;
+        height: 300px;
+        background-color: brown;
+    }
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 577px) {/*config para telas tamanho entre 577 e 992px(tablets) --- valores para a largura da tela(width)*/
+    #container {
+        width: 950px;
+        margin: auto;
+    }
+
+    #conteudo {
+        display: none;/*faz a div sumir na resolução apresentada*/
+    }
+
+    #menu, #rodape {
+        width: 950px;
+        height: 200px;
+        background-color: chartreuse;
+    }
+
+    #feeds {
+        width: 950px;
+        height: 600px;
+        background-color: darkred;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    #container {
+        width: 993px;
+        background-color: aqua;
+        margin: auto;
+    }
+
+    #menu, #rodape {
+        width: 993px;
+        height: 300px;
+        background-color: blueviolet;
+    }
+
+    #corpo{
+        width: 993px;
+        height: 700px;
+        background-color: crimson;
+    }
+
+    #conteudo {
+        width: 496px;
+        height: 700px;
+        background-color: darkgreen;
+        float: left;
+    }
+
+    #feeds {
+        width: 497px;
+        height: 700px;
+        background-color: darkorange;
+        float: left;
+    }
+}
