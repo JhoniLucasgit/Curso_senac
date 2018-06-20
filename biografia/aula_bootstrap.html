@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AULA DE BOOTSTRAP 19/06</title>
+    <title>AULA DE BOOTSTRAP 1 - 19/06</title>
     <!--LINKS BOOTSTRAP -->
     <link rel="stylesheet" href="resources/css/bootstrap.css">
     <link rel="stylesheet" href="resources/css/bootstrap-grid.css">
     <link rel="stylesheet" href="resources/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Início da Linha -->
@@ -20,9 +23,9 @@
                     <legend>Cadastro de Produto</legend>
                     <form action="">
                         <div class="form-group">
-                            <label for="nome">Nome</label> 
+                            <label for="nome">Nome</label>
                             <input type="text" class="form-control" name="nome" id="nome">
-                        </div>    
+                        </div>
                         <div class="form-group">
                             <label for="categoria">Categoria</label>
                             <select class="form-control" name="categoria" id="categoria">
@@ -31,8 +34,14 @@
                                 <option value="3">Informática</option>
                             </select>
                         </div>
-                        <button class="btn btn-success" type="submit">Cadastrar</button>
-                        <button class="btn btn-danger" type="reset">Limpar</button>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-danger btn-block" type="reset">Limpar</button>
+                            </div>
+                        </div>
                     </form>
                 </fieldset>
             </div>
@@ -48,6 +57,7 @@
                                 <th>#</th>
                                 <th>nome</th>
                                 <th>categoria</th>
+                                <th>ações</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -55,21 +65,38 @@
                                 <td>1</td>
                                 <td>Notebok HP</td>
                                 <td>Informática</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm" type="submit">editar</button>  
+                                    <button class="btn btn-danger btn-sm" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
+                                    
+                                </td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>TV 50" Philco</td>
                                 <td>Eletrônicos</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm" type="submit">editar</button>
+                                    <button class="btn btn-danger btn-sm" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>3</td>
                                 <td>Celular Samsung 10</td>
                                 <td>Telefonia</td>
-                            </tr>                            
+                                <td>
+                                    <button class="btn btn-primary btn-sm" type="submit">editar</button>
+                                    <button class="btn btn-danger btn-sm" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
+                                </td>
+                            </tr>
                             <tr>
                                 <td>4</td>
                                 <td>Pen Drive sandisk</td>
                                 <td>Informática</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm" type="submit">editar</button>
+                                    <button class="btn btn-danger btn-sm" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -88,4 +115,5 @@
     <script src="resources/js/bootstrap.js"></script>
     <script src="resources/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
