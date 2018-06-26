@@ -1,9 +1,9 @@
 <html>
 <script>
-let tempFahre = parseFloat(prompt('Digite a temperatura em Farenheit'));
+let farenheit = parseFloat(prompt('Digite a temperatura em Farenheit'));
 
-let conversao = 5*(tempFahre-32)/9;
+let celsius = (farenheit - 32) * 5 / 9;
 
-alert('A temperatura em graus Farenheit equivale a '+conversao+'°C');
+alert(farenheit.toFixed(2)+'°F = '+celsius.toFixed(2)+'°C');
 </script>
 </html>

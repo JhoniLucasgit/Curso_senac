@@ -1,0 +1,19 @@
+<html>
+<script>
+var nota = parseFloat(prompt('Digite a nota'));
+if(nota >= 7){
+    alert('Aprovado');
+} else {
+    alert('Recuperacao');
+
+    let notaRecup = parseFloat(prompt('Digite a nota da recuperacao'));
+
+    let recup = (nota+notaRecup)/2;
+    if(recup >= 7){
+        alert('Aprovado na recuperacao');
+    } else {
+        alert('Reprovado');
+    }
+} 
+</script>
+</html>
