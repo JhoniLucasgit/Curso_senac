@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<script>
+let produto1 = parseFloat(prompt('Digite o valor do 1° produto'));
+let produto2 = parseFloat(prompt('Digite o valor do 2° produto'));
+let produto3 = parseFloat(prompt('Digite o valor do 3° produto'));
+
+if(!(produto1 > produto2) && !(produto1 > produto3)){
+    alert('Compre o 1° produto');
+}else if(!(produto1 < produto2) && !(produto2 > produto3)){
+    alert('Compre o 2° produto');
+}else {
+    alert('Compre o 3° produto');
+}
+</script>
+</html>
