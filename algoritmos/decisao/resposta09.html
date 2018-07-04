@@ -7,18 +7,27 @@ let numero1 = parseFloat(prompt('Digite o 1° numero'));
 let numero2 = parseFloat(prompt('Digite o 2° numero'));
 let numero3 = parseFloat(prompt('Digite o 3° numero'));
 
-if(numero1 > numero2 && numero2 > numero3){       //123 
-    alert(numero1+"(1° numero), "+numero2+"(2° numero), "+numero3+"(3° numero)");
-}else if(numero1 > numero3 && numero3 > numero2){ //132 
-    alert(numero1+"(1° numero), "+numero3+"(3° numero), "+numero2+"(2° numero)");
-}else if(numero2 > numero1 && numero1 > numero3){ //213 
-    alert(numero2+"(2° numero), "+numero1+"(1° numero), "+numero3+"(3° numero)");
-}else if(numero2 > numero3 && numero3 > numero1){ //231
-    alert(numero2+"(2° numero), "+numero3+"(3° numero), "+numero1+"(1° numero)");
-}else if(numero3 > numero1 && numero1 > numero2){ //312
-    alert(numero3+"(3° numero), "+numero1+"(1° numero), "+numero2+"(2° numero)");
-}else if(numero3 > numero2 && numero2 > numero1){ //321
-    alert(numero3+"(3° numero), "+numero2+"(2° numero), "+numero1+"(1° numero)");
+/*sequencia é numero1 < numero2 < numero3*/
+
+/*se numero1 maior que numero 2*/
+if(numero1 > numero2){
+    auxiliar = numero1;
+    numero1 = numero2;
+    numero2 = auxiliar;
 }
+/*se numero2 maior que numero 3*/
+if(numero2 > numero3){
+    auxiliar = numero2;
+    numero2 = numero3;
+    numero3 = auxiliar;
+}
+/*se numero1 ficar com um valor maior que numero2 nas trocas*/
+if(numero1 > numero2){
+    auxiliar = numero1;
+    numero1 = numero2;
+    numero2 = auxiliar;
+}
+
+alert(numero3+ " < " +numero2+ " < " +numero1);
 </script>
 </html>

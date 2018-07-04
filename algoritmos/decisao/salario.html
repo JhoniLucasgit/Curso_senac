@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="UTF-8">   
+    <title>Document</title>
+</head>
+<script>
+    /*reajuste de salários*/
+
+let salario = parseFloat(prompt("Digite seu salário antigo:"));
+let ajuste = 0;
+let salarioAtual = 0;
+let percentual = 0;
+
+if(salario <= 280){
+    percentual = 0.2;
+    ajuste = salario * percentual;
+    salarioAtual = salario+ajuste;    
+}else if(salario > 280 && salario <= 700){
+    percentual = 0.15;
+    ajuste = salario * percentual;
+    salarioAtual = salario+ajuste;
+}else if(salario > 700 && salario <= 1500){
+    percentual = 0.10;
+    ajuste = salario * percentual;
+    salarioAtual = salario+ajuste;
+}else {
+    percentual = 0.5;
+    ajuste = salario * percentual;
+    salarioAtual = salario+ajuste;
+}
+
+alert(" Salario anterior: "+salario+
+    "\n Percentual Aplicado: "+percentual+
+    "\n Valor aumentado: "+ajuste+
+    "\n Novo salário: "+salarioAtual);
+/*
+ate 280 - 20%
+entre 280 e 700 - 15%
+entre 700 e 1500 - 10%
+a partir de 1500 - 5%
+
+
+tela:
+salario anterior;
+percentual aplicado;
+valor aumentado;
+novo salario;
+
+*/
+
+</script>
+</html>

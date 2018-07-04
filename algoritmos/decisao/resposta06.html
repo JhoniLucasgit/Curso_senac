@@ -3,16 +3,37 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 <script>
-let numero1 = parseFloat(prompt('Digite o 1° numero'));
-let numero2 = parseFloat(prompt('Digite o 2° numero'));
-let numero3 = parseFloat(prompt('Digite o 3° numero'));
+alert("Qual é o Maior valor?");
+let valor1 = parseFloat(prompt('Digite o 1° valor'));
+let valor2 = parseFloat(prompt('Digite o 2° valor'));
+let valor3 = parseFloat(prompt('Digite o 3° valor'));
 
-if(numero1 > numero2 && numero1 > numero3){
+/*if(numero1 > numero2 && numero1 > numero3){
     alert('1° numero é o maior');
-}else if(numero1 < numero2 && numero2 > numero3){
+}else if(numero2 > numero1 && numero2 > numero3){
     alert('2° numero é o maior');
 }else {
     alert('3° numero é o maior');
+}*/
+
+/*  solução do professor*/
+if(valor1 > valor2){
+    auxiliar = valor1;
+    valor1 = valor2;
+    valor2 = auxiliar;
 }
+if(valor2 > valor3){
+    auxiliar = valor2;
+    valor2 = valor3;
+    valor3 = auxiliar;
+}
+if(valor1 > valor2){
+    auxiliar = valor1;
+    valor1 = valor2;
+    valor2 = auxiliar;
+}
+alert(valor3);
+
+
 </script>
 </html>

@@ -3,8 +3,24 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 <script>
-let turno = prompt("Em que turno você estuda?(M-Matutino ou V-Vespertino ou N-Noturno)");
+let turno = prompt("Em que turno você estuda?(M-Matutino ou V-Vespertino ou N-Noturno)").toLowerCase();
 
+switch(turno){
+    case "m": 
+        alert('Bom Dia!');
+        break;
+    case "v": 
+        alert('Boa Tarde!');
+        break;
+    case "n": 
+        alert('Boa Noite!');
+        break;
+    default:
+        alert('Turno Inválido!');
+}
+
+
+/*
 if(turno == "m" || turno == "M"){
     alert("Bom Dia!");
 } else if (turno == "v" || turno == "V"){
@@ -13,6 +29,6 @@ if(turno == "m" || turno == "M"){
     alert("Boa Noite!");
 } else {
     alert("Valor Inválido!");
-}
+}*/
 </script>
 </html>

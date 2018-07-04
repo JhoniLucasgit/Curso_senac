@@ -3,14 +3,29 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head> 
 <script>
-let sexo = prompt('Digite o sexo com M(masculino) e F(feminino)');
+let sexo = prompt('Digite o sexo').toLowerCase() // Converte em minusculo
+                                  .trim()        // Remover espaços das pontas
+                                  .charAt(0);    // Pega o primeiro caracteres
 
-if(sexo == 'm' || sexo == 'M'){
+
+switch(sexo){
+    case "m": 
+        alert('Masculino');
+        break;
+    case "f": 
+        alert('Feminino');
+        break;
+    default:
+        alert('Sexo Inválido');
+}
+
+/*
+if(sexo == 'm'){
     alert('Masculino');
-} else if(sexo == 'f' || sexo == 'F'){
+} else if(sexo == 'f'){
     alert('Feminino');
 }else {
     alert('Sexo Inválido');
-}
+}*/
 </script>
 </html>

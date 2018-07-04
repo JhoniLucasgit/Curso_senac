@@ -3,16 +3,50 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 <script>
-let numero1 = parseFloat(prompt('Digite o 1° numero'));
-let numero2 = parseFloat(prompt('Digite o 2° numero'));
-let numero3 = parseFloat(prompt('Digite o 3° numero'));
+alert("Qual é o Menor valor?");
+let valor1 = parseFloat(prompt('Digite o 1° valor'));
+let valor2 = parseFloat(prompt('Digite o 2° valor'));
+let valor3 = parseFloat(prompt('Digite o 3° valor'));
 
-if(!(numero1 > numero2) && !(numero1 > numero3)){
-    alert('1° numero é o menor');
-}else if(!(numero1 < numero2) && !(numero2 > numero3)){
-    alert('2° numero é o menor');
-}else {
-    alert('3° numero é o menor');
+/*sequencia é numero3 < numero2 < numero1*/
+
+/*valor 2 maior que valor 1*/
+if(valor2 > valor1){
+    auxiliar = valor2;
+    valor2 = valor1;
+    valor1 = auxiliar;
 }
+/*valor3 maior que valor2*/
+if(valor3 > valor2){
+    auxiliar = valor3;
+    valor3 = valor2;
+    valor2 = auxiliar;
+}
+/*se dps da troca valor2 ficar maior que valor1*/
+if(valor2 > valor1){
+    auxiliar = valor2;
+    valor2 = valor1;
+    valor1 = auxiliar;
+}
+alert(valor3);
+
+/*solução do professor
+if(valor1 < valor2){
+    auxiliar = valor1;
+    valor1 = valor2;
+    valor2 = auxiliar;
+}
+if(valor2 < valor3){
+    auxiliar = valor2;
+    valor2 = valor3;
+    valor3 = auxiliar;
+}
+if(valor1 < valor2){
+    auxiliar = valor1;
+    valor1 = valor2;
+    valor2 = auxiliar;
+}
+alert(valor3);*/
+
 </script>
 </html>
