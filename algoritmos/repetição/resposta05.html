@@ -1,0 +1,39 @@
+<html>
+<meta charset="utf-8">
+<script>
+let populacaoA = parseInt(prompt("Digite a população da cidade A"));
+let taxaA = parseFloat(prompt("Digite a taxa de crescimento de A"));
+taxaA /= 100;
+
+let populacaoB = parseInt(prompt("Digite a população da cidade B"));
+let taxaB = parseFloat(prompt("Digite a taxa de crescimento de B"));
+taxaB /= 100;
+
+let menos = 0;
+let mais = 0;
+if(populacaoA > populacaoB){
+    mais = populacaoA;
+    menos = populacaoB;
+} else {
+    mais = populacaoB;
+    menos = populacaoA;
+}
+
+for(let i=0; i > -2; i++){
+    mais += mais * taxaA;
+    menos += menos * taxaB;
+    if(mais >= menos){
+        alert("Passaram-se "+i+" anos \n\
+        para a população menor alcançar a maior");
+        break;
+    } else {
+        alert("Passaram-se "+i+" anos \n\
+        para a população menor alcançar a maior");
+        alert();
+        break;
+    }
+}
+
+
+</script>
+</html>

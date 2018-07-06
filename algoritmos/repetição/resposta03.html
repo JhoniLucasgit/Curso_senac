@@ -1,15 +1,43 @@
 <html>
 <meta charset="utf-8">
 <script>
-    /* nome > 3 Characteres 
-    idade 0 e 150
-    salario > 0
-    sexo f ou m 
-    estado civil s c v d */
-    let nome = prompt("Digite seu nome:");
-    let idade = parseInt(prompt("Digite sua idade:"));
-    let salario = parseFloat(prompt("Digite seu salário:"));
-    let sexo = prompt("Digite seu sexo:").toLowerCase().trim().charAt();
-    let estadoCivil = prompt("Digite seu estado civil:").toLowerCase().trim().charAt();
+for(let i = 0; i < 10; i++){
+    var nome = prompt("Digite seu nome").toUpperCase();
+    if(nome.length > 3){
+        break;
+    }
+}
+alert(nome);
+for(let i = 0; i < 10; i++){
+    var idade = parseInt(prompt("Digite sua idade"));
+    if(!isNaN(idade) && idade >= 0 && idade <= 150){
+        break;
+    }
+}    
+alert(idade);
+for(let i=0; i<10;i++){
+    var salario = parseFloat(prompt("Digite seu salário"));
+    if(!isNaN(salario) && salario > 0){
+        break;
+    }
+}
+alert(salario);
+for(let i = 0; i < 10; i++){
+    var sexo = prompt("Digite seu sexo").toUpperCase().trim().charAt(0);
+    if(sexo == "M" || sexo == "F"){
+        break;
+    }
+}
+alert(sexo);
+for(let i=0; i<10; i++){
+    var civil = prompt("Digite seu estado civil").toUpperCase().trim().charAt();
+    if(civil == "S" ||
+       civil == "C" ||
+       civil == "V" ||
+       civil == "D"){
+           break;
+    }
+}
+alert(estadoCivil);
 </script>
 </html>

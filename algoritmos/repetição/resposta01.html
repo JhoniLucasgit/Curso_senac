@@ -2,31 +2,25 @@
 <html>
 <meta charset="UTF-8">
 <script>
-let nota = 0;
+/* loop finito
+
 for(let i = 0; i < 10; i++){
-    nota = parseInt(prompt("Digite uma nota de 0 a 10"));
+    var nota = parseInt(prompt("Digite uma nota de 0 a 10"));
     if(isNaN(nota) || nota < 0 || nota > 10){
         alert("Nota inválida!");
     }else {
         alert(nota+" é uma nota válida!");
         break;
     }
-}
+} */
 
-//loop infinito com saida
-/* let nota = parseInt(prompt("Digite uma nota de 0 a 10."));
-for(let i = 1; i > -1; i++){
-    if(isNaN(nota) || nota < 0 || nota > 10){
-    alert("Digite uma nota válida.");
-    nota = parseInt(prompt("tente denovo"));
-        if(isNaN(nota) || nota >= 0 && nota <= 10){
-            alert(nota+" é uma nota válida!");
-            break;
-        }
-    }
-} 
-alert(nota);
-*/
+/* loop infinito */
+let nota = parseInt(prompt("Digite uma nota de 0 a 10"));
+while(isNaN(nota) || nota < 0 || nota > 10){
+    alert("Nota inválida!");
+    nota = parseInt(prompt("Digite uma nota de 0 a 10"));
+}
+alert("Nota válida");
 
 </script>
 </html>
