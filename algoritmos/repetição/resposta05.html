@@ -9,27 +9,13 @@ let populacaoB = parseInt(prompt("Digite a população da cidade B"));
 let taxaB = parseFloat(prompt("Digite a taxa de crescimento de B"));
 taxaB /= 100;
 
-let menos = 0;
-let mais = 0;
-if(populacaoA > populacaoB){
-    mais = populacaoA;
-    menos = populacaoB;
-} else {
-    mais = populacaoB;
-    menos = populacaoA;
-}
-
-for(let i=0; i > -2; i++){
-    mais += mais * taxaA;
-    menos += menos * taxaB;
-    if(mais >= menos){
-        alert("Passaram-se "+i+" anos \n\
-        para a população menor alcançar a maior");
-        break;
-    } else {
-        alert("Passaram-se "+i+" anos \n\
-        para a população menor alcançar a maior");
-        alert();
+for(let i=0; i > -1; i++){
+    populacaoA += populacaoA * taxaA;
+    populacaoB += populacaoB * taxaB;
+    if(populacaoA >= populacaoB){
+        alert("Passaram-se "+i+" anos");
+        alert("População de A: "+populacaoA.toFixed(0));
+        alert("População de B: "+populacaoB.toFixed(0));
         break;
     }
 }

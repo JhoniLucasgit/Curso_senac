@@ -1,34 +1,61 @@
 <html>
 <meta charset="utf-8">
 <script>
-for(let i = 0; i < 10; i++){
+    // NOME
+/* for(let i = 0; i < 10; i++){
     var nome = prompt("Digite seu nome").toUpperCase();
     if(nome.length > 3){
         break;
     }
 }
-alert(nome);
-for(let i = 0; i < 10; i++){
+alert(nome); */
+var nome = prompt("Digite seu nome").toUpperCase();
+teste = nome.length;
+while(teste <= 3){
+    alert("tente novamente");
+    nome = prompt("Digite seu nome").toUpperCase();
+    teste = nome.length;
+}
+    // IDADE
+/* for(let i = 0; i < 10; i++){
     var idade = parseInt(prompt("Digite sua idade"));
     if(!isNaN(idade) && idade >= 0 && idade <= 150){
         break;
     }
-}    
-alert(idade);
-for(let i=0; i<10;i++){
+}*/
+
+var idade = parseInt(prompt("Digite sua idade"));
+while(isNaN(idade) || idade < 0 || idade > 150){
+    alert("teste novamente");
+    idade = parseInt(prompt("Digite sua idade"));
+}
+    // SALARIO
+/* for(let i=0; i<10;i++){
     var salario = parseFloat(prompt("Digite seu salário"));
     if(!isNaN(salario) && salario > 0){
         break;
     }
+} */
+var salario = parseFloat(prompt("Digite seu salario"));
+while(isNaN(salario) || salario <= 0){
+    alert("tente novamente");
+    salario = parseFloat(prompt("Digite seu salario"));
 }
-alert(salario);
-for(let i = 0; i < 10; i++){
+    // SEXO
+/*for(let i = 0; i < 10; i++){
     var sexo = prompt("Digite seu sexo").toUpperCase().trim().charAt(0);
     if(sexo == "M" || sexo == "F"){
         break;
     }
+} 
+*/
+var sexo = prompt("Digite seu sexo").toUpperCase().trim().charAt(0);
+while(!isNaN(sexo) || sexo != "M" && sexo != "F"){
+    alert("tente novamente");
+    sexo = prompt("Digite seu sexo").toUpperCase().trim().charAt(0);
 }
-alert(sexo);
+    // ESTADO CIVIL
+/*
 for(let i=0; i<10; i++){
     var civil = prompt("Digite seu estado civil").toUpperCase().trim().charAt();
     if(civil == "S" ||
@@ -37,7 +64,16 @@ for(let i=0; i<10; i++){
        civil == "D"){
            break;
     }
+} */
+var civil = prompt("Digite seu estado civil").toUpperCase().trim().charAt();
+while(!isNaN(civil) || civil != "S" && civil != "C" && civil != "V" && civil != "D"){
+    alert("tente novamente");
+    civil = prompt("Digite seu estado civil").toUpperCase().trim().charAt();
 }
-alert(estadoCivil);
+alert("Nome: " + nome + "\n\
+Idade: " + idade + "\n\
+Salário: " + salario + "\n\
+Sexo: " + sexo + "\n\
+Estado Civil: " + civil);
 </script>
 </html>
