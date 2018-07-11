@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<script>
+let vetor = ["a", "b", "e", "c", "i", "g", "o", "h", "u", "s", "t", "q"];
+let consoante = [];
+
+for(let i=0; i<vetor.length; i++){
+    if(isNaN(vetor[i]) 
+    && vetor[i] != "a" 
+    && vetor[i] != "e" 
+    && vetor[i] != "i" 
+    && vetor[i] != "o" 
+    && vetor[i] != "u"){            
+        consoante.push(vetor[i]); 
+    }
+}
+alert(consoante.length);
+alert(consoante);
+
+/* for(let i=0; i<10; i++){
+    n = i+1;
+    let letra = prompt("Digite o caractere "+n).toLowerCase().trim().charAt(0);    
+    if(isNaN(vetor[i]) 
+    && vetor[i] != "a" 
+    && vetor[i] != "e" 
+    && vetor[i] != "i" 
+    && vetor[i] != "o" 
+    && vetor[i] != "u"){            
+        consoante.push(vetor[i]); 
+    }
+    
+} 
+alert(vetor.length);
+alert(vetor); */
+
+
+</script>
+</html>

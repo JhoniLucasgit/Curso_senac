@@ -1,0 +1,10 @@
+weskleymb        = professor
+lecassimiro      = leandro
+antonytony       = antonio
+irancruz         = iranilson
+adrianoroque     = adriano
+jrpassarinho     = passarinho
+sidicleycorre    = sidicley
+jsojsoliveira    = jackson
+alvesaci         = alves
+feliciano.ademir = ademir

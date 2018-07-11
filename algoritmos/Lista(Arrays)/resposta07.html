@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<script>
+let vetor = [/* 5, 6, 7, 8, 9 */];
+let soma = 0;
+let multiplicacao = 1;
+/* for(let i=0; i<5; i++){
+    soma += vetor[i];
+    multiplicacao *= vetor[i];
+}
+
+*/
+
+for(let i=0; i<5; i++){
+    n = i+1;
+    let num = parseInt(prompt("Digite o valor "+n));
+    vetor.push(num);
+    soma += num;
+    multiplicacao *= num;
+}
+alert("os numeros sao: "+vetor);
+alert("soma: "+soma);
+alert("multiplicacao: "+multiplicacao);
+
+</script>
+</html>
+
