@@ -1,0 +1,34 @@
+<html>
+<meta charset="UTF-8">
+<script>
+
+let nome = prompt("Digite seu nome").toUpperCase();
+document.write(nome.split("").reverse().toString().replace(/,/g, "")); 
+
+/*
+legenda:
+split("") = transforma string em array
+reverse() = inverte o array
+toString() = tranforma o array em string
+replace(/,/g , "") = troca as ,(virgulas) por ""(espaço em branco).
+*/
+
+// RESPOSTA DO PROFESSOR
+
+/* let nome = "jose alves pereira";
+
+let nome_inverso = "";
+
+for(let i=nome.length-1; i >= 0; i--){
+    nome_inverso += nome.charAt(i);
+}
+document.write(nome_inverso.toUpperCase());
+
+document.write(nome.split('').reverse().join('').toUpperCase()); */
+
+/*
+legenda:
+join('') = une os elementos de um array com um caractere especifico(no caso espaço em branco '' )
+*/
+</script>
+</html>

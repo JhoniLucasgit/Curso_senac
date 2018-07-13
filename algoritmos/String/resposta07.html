@@ -1,0 +1,16 @@
+<html>
+<meta charset="UTF-8">
+<script>
+let frase = "O rato roeu a roupa do rei de Roma";
+let espacos = 0;
+let vogais = 0;
+for(let i = 0; i < frase.length; i++){
+    let letra = frase.charAt(i);
+    if(letra == " "){
+        espacos++;
+    } else if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u"){
+        vogais++;
+    }
+}
+</script>
+</html>

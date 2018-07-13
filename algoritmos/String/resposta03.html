@@ -1,0 +1,15 @@
+<html>
+<meta charset="UTF-8">
+<script>
+let nome = prompt("Digite seu nome").toUpperCase();
+/*  RESPOSTA DO PROFESSOR
+alert(nome.split('').join('\n').toUpperCase()); 
+join('\n') = pode ser usado para separar com \n para deixa em vertical. */
+
+let resultado = "";
+for(let i=0; i<nome.length; i++){
+    resultado += nome.charAt(i) + "<br>";// chatAt() = função de pegar item por item de uma string
+}
+document.write(resultado);
+</script>
+</html>

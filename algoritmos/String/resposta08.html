@@ -1,0 +1,15 @@
+<html>
+<meta charset="UTF-8">
+<script>
+let texto = "texto";
+let texto_inverso = texto.toUpperCase().split('').reverse().join('').replace(/ /g, "");
+
+
+if(texto.toUpperCase().replace(/ /g, "") == texto_inverso){
+    document.write("\""+texto+"\" é um palíndromo");
+}else {
+    document.write("\""+texto+"\" não é um palíndromo");
+}
+
+</script>
+</html>

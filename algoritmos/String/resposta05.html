@@ -1,0 +1,11 @@
+<html>
+<meta charset="UTF-8">
+<script>
+let nome = prompt("Digite seu nome").toUpperCase();
+let ajuda = nome.split("");
+for(let i=0; i<nome.length; i++){
+    document.write(ajuda.join("")+"<br>");
+    ajuda.pop();
+}
+</script>
+</html>
