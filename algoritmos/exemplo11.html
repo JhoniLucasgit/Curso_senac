@@ -1,0 +1,37 @@
+<html>
+<meta charset="utf-8">
+<script>
+//exemplo de funções
+
+/* com parametros simples
+let x = 20;
+let y = 30;
+
+let sum = soma(x, y);
+
+alert(sum);
+
+function soma(valor1, valor2){
+    let resultado = valor1 + valor2; 
+    return resultado;
+} */ 
+
+let valores=[1, 5, 9, 14, 10];
+
+let sum = soma(valores);
+
+alert(sum);
+
+function soma(numeros){
+    let resultado = 0;
+    for(let i=0; i<numeros.length; i++){
+        if(!isNaN(numeros[i])){
+            resultado += numeros[i];
+        }
+    }
+    return resultado;
+}
+
+
+</script>
+</html>

@@ -1,0 +1,25 @@
+matriz js
+
+i = linhas
+j = colunas
+
+
+linhas | colunas(resposta que vai aparecer)
+i+=j+\n| j=1   j=2   j=3   j=4   j=5 .................... j=n   j=i+" ";                             
+  i=1  | 1+" "
+  i=2  | 2+" " 2+" "
+  i=3  | 3+" " 3+" " 3+" "
+  i=4  | 4+" " 4+" " 4+" " 4+" "
+  i=5  | 5+" " 5+" " 5+" " 5+" " 5+" "
+  ............................................
+  i=n  | n+" " n+" " n+" " n+" " n+" " n+" " n+" " ...... n+" " 
+sintax:
+resposta = "";
+for(i=0; i<numero; i++){ 
+    for(j=0; j<i; j++){
+        resposta += j + " ";(colunas)
+    }
+    resposta += "\n";(linhas)
+}
+
+resposta vira uma matriz

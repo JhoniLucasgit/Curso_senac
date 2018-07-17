@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<script>
+let x = 5;
+
+alert(piramide(x));
+
+function piramide(numero){
+    let resposta = "";
+    for(let i=1; i<=numero; i++){
+        for(let j=1; j<=i; j++){
+            for(let k=1; k<=j; k++){
+                resposta += k + " ";
+            }
+            resposta += "\n";
+        }
+        resposta += "\n";
+    }
+    return resposta;
+}
+
+</script>
+</html>
