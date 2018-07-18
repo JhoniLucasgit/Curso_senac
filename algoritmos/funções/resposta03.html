@@ -7,7 +7,19 @@ let x = 5;
 let y = 5;
 let z = 5;
 
-
 alert(soma(x, y, z));
+
+// RESPOSTA DO PROFESSOR
+
+let numeros = [];
+
+let vezes = parseInt(prompt('Digite a quantidade de vezes'));
+
+for(let i=1; i <= vezes; i++){
+    let numero = parseInt(prompt('Digite o numero '+i));
+        numeros.push(numero);
+}
+
+alert(soma_vezes(numeros));
 </script>
 </html>
