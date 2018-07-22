@@ -3,10 +3,32 @@
 <script>
 let valor1 = parseInt(prompt("Digite o valor 1"));
 let valor2 = parseInt(prompt("Digite o valor 2"));
-for(let i=1; i > -2; i++){
-    valor1 += i + " ";
-}
+let contador = "";
 
-alert(valor1);
+if(!isNaN(valor1) && !isNaN(valor2)){
+    if(valor1 != valor2){    
+        if(valor1 > valor2){
+                var diferença = valor1 - valor2;
+            } else {
+                var diferença = valor2 - valor1;
+            }
+
+        for(let i=1; i < diferença; i++){
+            if(valor1 < valor2){
+                n = valor1 + i;
+                contador += n + " ";
+            } else if(valor1 > valor2){
+                n = valor2 + i;
+                contador += n + " ";
+            }        
+        }
+        
+    alert(contador);
+    } else {
+        alert("O números são iguais, não tem intervalo");
+    }
+} else {
+    alert("Os valores digitados não são números");
+}
 </script>
 </html>

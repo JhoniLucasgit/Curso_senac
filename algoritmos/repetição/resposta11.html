@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<script>
+let valor1 = parseInt(prompt("Digite o valor 1"));
+let valor2 = parseInt(prompt("Digite o valor 2"));
+let somador = 0;
+
+if(!isNaN(valor1) && !isNaN(valor2)){
+    if(valor1 != valor2){
+        if(valor1 > valor2){
+            var diferenca = valor1 - valor2;
+        }else{
+            var diferenca = valor2 - valor1;
+        }
+        
+        for(let i=1; i < diferenca; i++){
+            if(valor1 < valor2){
+                somador += (valor1 + i);
+            }else{
+                somador += (valor2 + i);
+            }
+        }
+
+        alert(somador);
+    }else{
+        alert("Os valores digitados são iguais, não tem intervalo");
+    }
+}else{
+    alert("Os valores informados não são números.");
+}
+</script>
+</html>
